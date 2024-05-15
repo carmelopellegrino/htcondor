@@ -1719,10 +1719,10 @@ First, this would appear in the map file:
 
     # Mapfile snippet:
     # Plugin for specific token issuer
-    SCITOKENS ^https://phys.uz.edu, PLUGIN:A
+    SCITOKENS /^https:\/\/phys\.uz\.edu/,/ PLUGIN:A
 
     # Plugins for all other token issuers
-    SCITOKENS .* PLUGIN:B,C
+    SCITOKENS /.*// PLUGIN:B,C
 
 Then, this would appear in the configuration files:
 
